@@ -17,3 +17,13 @@ int minCostClimbingStairs(int *cost, int n){
 	free(dp);
 	return minCost;
 }
+
+int main() {
+    int cost[] = {10, 15, 20, 25, 30};
+    int costSize = sizeof(cost) / sizeof(cost[0);
+
+    int minCost = minCostClimbingStairs(cost, costSize);
+    printf("Minimum cost to climb the stairs: %d\n", minCost);
+
+    return 0;
+}
